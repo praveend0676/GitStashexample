@@ -57,3 +57,24 @@ Author: praveend0676 <praveendevisetti0676@gmail.com>
 Date:   Wed Sep 23 19:41:05 2026 +0530
 
     first commit
+
+    | Point                   | `git stash apply`             | `git stash pop`                |
+| ----------------------- | ----------------------------- | ------------------------------ |
+| Restores changes        | ✅ Yes                         | ✅ Yes                          |
+| Removes stash           | ❌ No                          | ✅ Yes, if applied successfully |
+| Can reuse same stash    | ✅ Yes                         | ❌ Normally no                  |
+| Safer for demonstration | ✅ Yes                         | More destructive               |
+| Command                 | `git stash apply "stash@{0}"` | `git stash pop "stash@{0}"`    |
+
+
+git stash – Temporarily saves uncommitted changes and cleans the working directory.
+git stash list – Displays all saved stashes.
+git stash show – Shows a summary of changes in a stash.
+git stash apply – Restores changes but keeps the stash.
+git stash pop – Restores changes and removes the stash after successful application.
+git stash drop – Permanently removes a specific stash.
+
+Easy to remember:
+👉 Apply = Restore + Keep
+👉 Pop = Restore + Remove
+👉 Drop = Delete Stash
