@@ -58,6 +58,10 @@ Date:   Wed Sep 23 19:41:05 2026 +0530
 
     first commit
 
+APPLY VS POP 
+apply → restores the changes but keeps the stash.
+pop → restores the changes and removes the stash if the operation succeeds.
+
     | Point                   | `git stash apply`             | `git stash pop`                |
 | ----------------------- | ----------------------------- | ------------------------------ |
 | Restores changes        | ✅ Yes                         | ✅ Yes                          |
@@ -68,13 +72,22 @@ Date:   Wed Sep 23 19:41:05 2026 +0530
 
 
 git stash – Temporarily saves uncommitted changes and cleans the working directory.
+
 git stash list – Displays all saved stashes.
+
 git stash show – Shows a summary of changes in a stash.
+
 git stash apply – Restores changes but keeps the stash.
+
 git stash pop – Restores changes and removes the stash after successful application.
+
 git stash drop – Permanently removes a specific stash.
 
+
 Easy to remember:
+
 👉 Apply = Restore + Keep
+
 👉 Pop = Restore + Remove
+
 👉 Drop = Delete Stash
